@@ -1,0 +1,3 @@
+clusters:
+  - name: minikube
+    kubeconfig: ~/.kube/config

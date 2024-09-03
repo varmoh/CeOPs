@@ -1,0 +1,26 @@
+# Define new images for containers
+new_images:
+  - container_name: 'test-container'
+    image: 'nginx:1.21.0'
+  - container_name: 'sidecar-container'
+    image: 'busybox:1.35'
+
+# Define environment variable updates
+env_vars:
+  - container_name: 'test-container'
+    env:
+      - name: ENVIRONMENT
+        value: 'test1'
+      - name: LOG_LEVEL
+        value: 'debug'
+  - container_name: 'sidecar-container'
+    env:
+      - name: SIDE_ENV
+        value: 'test2'
+      - name: SIDE_LOG_LEVEL
+        value: 'warning'
+
+# Deployment info remains the same
+deployment_info:
+  namespace: 'default'
+  deployment_name: 'test-deployment'

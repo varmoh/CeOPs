@@ -10,13 +10,13 @@ env_vars:
   - container_name: 'test-container'
     env:
       - name: ENVIRONMENT
-        value: 'test1'
+        value: 'test3'
       - name: LOG_LEVEL
         value: 'debug'
   - container_name: 'sidecar-container'
     env:
       - name: SIDE_ENV
-        value: 'test2'
+        value: 'test5'
       - name: SIDE_LOG_LEVEL
         value: 'warning'
 

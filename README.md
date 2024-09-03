@@ -1,9 +1,16 @@
 # CeOPs
 Local central operation tool for k8s management
 
-##### Testing on local minikube
-
 Currently have added following things that can be managed
 
 - Images version change
 - ENV changes
+
+
+##### Testing on local minikube
+
+Currently all the config files have been set up for local testing
+
+```
+kubectl apply -f ./test/test-deployment.yaml
+```
